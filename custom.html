@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --side-width:200px;
+            --main-color: slateblue;
+            --border-color: slateblue;
+            --background-color: rgb(238, 192, 10);
+        }
+        h1{
+            color: var(--main-color);
+        }
+        p{
+            color: var(--main-color);
+        }
+        h2{
+            border: var(--border-color);
+            color: var(--main-color);
+            background: var(--background-color);
+            color: aliceblue;
+        }
+        footer{
+            clear: both;
+            color: var(--main-color);
+        }
+        .side-nav, .blogs{
+            height: 500px;
+            float: left;
+        }
+        aside{
+            width: 200px;
+            background-color: #dc8989;
+        }
+        .blogs{
+            background-color: #a5f329;
+            width:calc(100% - 200px);
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>i am exploring custom property </h1>
+    <p>lorem i am exploring custom property </p>
+   </header> 
+
+   <main>
+
+<h2>my awsome content</h2>
+
+<section>
+    <aside class="side-nav">
+        my side navigation
+    </aside>
+    <div class="blogs">
+        <h4>blog</h4>
+    </div>
+</section>
+   </main>
+
+   <footer>
+    <p><small>copyright</small></p>
+   </footer>
+</body>
+</html>
